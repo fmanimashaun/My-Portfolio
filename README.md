@@ -14,21 +14,23 @@
 
 ## Screenshots
 
-### Desktop View
+<h3 align="center">Desktop View</h3>
 <p align="center">
   <img width="1440" height="900" src="screenshots/desktop_demo.png">
 </P>
 
 
-### Tablet View
+
+<h3 align="center">Tablet View</h3>
 <p align="center">
-  <img align="right" width="768" height="1024" src="screenshots/tablet_demo.png">
+  <img width="768" height="1024" src="screenshots/tablet_demo.png">
 </P>
 
 
-### Mobile View
+
+<h3 align="center">Mobile View</h3>
 <p align="center">
-  <img align="right" width="360" height="800" src="screenshots/mobile_demo.png">
+  <img width="360" height="800" src="screenshots/mobile_demo.png">
 </P>
 
 
