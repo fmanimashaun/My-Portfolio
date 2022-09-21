@@ -42,40 +42,6 @@
 - [Algorithm Layout](https://every-layout.dev/)
 
 
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-> Not applicable
-
-
-### Setup
-
-> Not applicable
-
-
-### Install
-
-> Not applicable
-
-
-### Usage
-
-> Not applicable
-
-
-### Run tests
-
-> Not applicable
-
-
-### Deployment
-
-> Not applicable
-
-
 ## Authors
 
 👤 **Author1**
