@@ -15,15 +15,21 @@
 ## Screenshots
 
 ### Desktop View
-<img align="right" width="1440" height="900" src="screenshots/desktop_demo.png">
+<p align="center">
+  <img width="1440" height="900" src="screenshots/desktop_demo.png">
+</P>
 
 
 ### Tablet View
-<img align="right" width="768" height="1024" src="screenshots/tablet_demo.png">
+<p align="center">
+  <img align="right" width="768" height="1024" src="screenshots/tablet_demo.png">
+</P>
 
 
 ### Mobile View
-<img align="right" width="360" height="800" src="screenshots/mobile_demo.png">
+<p align="center">
+  <img align="right" width="360" height="800" src="screenshots/mobile_demo.png">
+</P>
 
 
 ### Built With
