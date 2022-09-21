@@ -7,6 +7,11 @@
 > XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
+## Live Demo (Working-in-progress)
+
+[Live Demo Link](https://fmanimashaun.com/)
+
+
 ## Screenshots
 
 ### Desktop View
@@ -27,11 +32,6 @@
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Algorithm Layout](https://every-layout.dev/)
-
-
-## Live Demo (Working-in-progress)
-
-[Live Demo Link](https://fmanimashaun.com/)
 
 
 ## Getting Started
