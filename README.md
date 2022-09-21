@@ -15,15 +15,15 @@
 ## Screenshots
 
 ### Desktop View
-![screenshot](screenshots/desktop_demo.png)
+<img align="right" width="1440" height="900" src="screenshots/desktop_demo.png">
 
 
 ### Tablet View
-![screenshot](screenshots/tablet_demo.png)
+<img align="right" width="768" height="1024" src="screenshots/tablet_demo.png">
 
 
 ### Mobile View
-![screenshot](screenshots/mobile_demo.png)
+<img align="right" width="360" height="800" src="screenshots/mobile_demo.png">
 
 
 ### Built With
