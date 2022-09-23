@@ -89,8 +89,12 @@ header {
   padding-inline: 24px;
 }
 
-/* Profile Style
+/* Hero Style
 ------------------------------------ */
 #hero {
   background-image: url("../img/hero.png");
+}
+
+.hero-header {
+  font-size: 56px;
 }
