@@ -1,30 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Personal Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/fm-logo-mix.png" type="image/x-icon">
     <title>HOME | PERSONAL PORTFOLIO</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <!-- ***********************  PAGE OVERALL CONTENT WRAPPER *********************** -->
     <div class="container">
+
+        <!-- ***********************  MOBILE VIEWPORT MENU  *********************** -->
+        <nav class="mobile-menu-modal close-menu">
+            <div class="close-btn">
+                <img src="img/close.svg" alt="close icon" class="close-img">
+            </div>
+            <ul class="mobile nav-links">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- *********************** HEADER SECTION *********************** -->
         <header>
+            <div class="logo">
+                <img src="img/fm-logo-mix.png" alt="FM personal brand logo" class="logo-img">
+            </div>
             <nav>
-                <img src="img/FM logo-500x500-black.svg" alt="FM personal brand logo" class="logo">
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="desktop nav-links">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="menu-btn">
+                    <img src="img/menu.svg" alt="menu icon" class="menu-img">
+                </div>
             </nav>
         </header>
-        <main></main>
-        <footer></footer>
+
+        <!-- ***********************  MAIN SECTION  *********************** -->
+        <main>
+            <!-- *********************** PROFILE  *********************** -->
+            <section id="hero">
+                <h1>I’m Mariane Glad to see you!</h1>
+                <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+                experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                <p>LET’S CONNECT</p>
+                <div class="social-media">
+                    <img src="img/twitter.svg" alt="twitter icon" class="social-img">
+                    <img src="img/Linkedin.svg" alt="Linkedin icon" class="social-img">
+                    <img src="img/medium.svg" alt="medium icon" class="social-img">
+                    <img src="img/github.svg" alt="github icon" class="social-img">
+                    <img src="img/Vector.svg" alt="unknown icon" class="social-img">
+                </div>
+            </section>
+
+            <!-- *********************** PROJECTS  *********************** -->
+            <section id="portfolio">
+            
+            </section>
+
+            <!-- *********************** ABOUT  *********************** -->
+            <section id="about">
+            
+            </section>
+        </main>
+
+        <!-- ***********************  FOOTER SECTION  *********************** -->
+        <footer>
+            <!-- *********************** CONTACT  *********************** -->
+            <section id="contact">
+            
+            </section>
+        </footer>
     </div>
     <script src="js/index.js"></script>
 </body>
+
 </html>
