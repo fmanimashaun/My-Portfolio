@@ -10,7 +10,7 @@ The project is focus on create a professional portfolio site to showcase my prof
 ## Project Tasks List (Working-in-progress)
 
 - [x] Setting up the initial project structure
-- [ ] mobile version skeleton
+- [x] mobile version skeleton
 - [ ] Contact form
 - [ ] Desktop version
 - [ ] Application deploy
