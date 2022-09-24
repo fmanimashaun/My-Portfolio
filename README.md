@@ -4,12 +4,24 @@
 
 ## Overview
 
-> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+The project is focus on create a professional portfolio site to showcase my professional skills and experience while highlighting some of my real-life projects and other professional contributions to give an insight into my professional capacity and uniqueness. The Live site can be view from [my personal site](https://fmanimashaun.com/).
 
 
-## Live Demo (Working-in-progress)
+## Project Tasks List (Working-in-progress)
 
-[Live Demo Link](https://fmanimashaun.com/)
+- [x] Setting up the initial project structure
+- [x] mobile version skeleton
+- [ ] Contact form
+- [ ] Desktop version
+- [ ] Application deploy
+- [ ] Evaluate accessibility
+- [ ] Mobile menu
+- [ ] Details modal
+- [ ] Validate contact form
+- [ ] Preserve data in the browser
+- [ ] Finalising the project page
+
+> [Live Demo Link](https://fmanimashaun.com/)
 
 
 ## Screenshots
@@ -20,12 +32,10 @@
 </P>
 
 
-
 <h3 align="center">Tablet View</h3>
 <p align="center">
   <img width="768" height="1024" src="screenshots/tablet_demo.png">
 </P>
-
 
 
 <h3 align="center">Mobile View</h3>
@@ -44,12 +54,12 @@
 
 ## Authors
 
-👤 **Author1**
+👤 **Engr. Animashaun Fisayo**
 
-- GitHub: [@fmanimashaun](https://github.com/fmanimashaun)
-- Twitter: [@fmanimashaun](https://twitter.com/fmanimashaun)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fmanimashaun/)
-- Website: [Portfolio](https://fmanimashaun.com)
+- [GitHub](https://github.com/fmanimashaun)
+- [Twitter](https://twitter.com/fmanimashaun)
+- [LinkedIn](https://www.linkedin.com/in/fmanimashaun/)
+- [Website](https://fmanimashaun.com)
 
 
 ## 🤝 Contributing
