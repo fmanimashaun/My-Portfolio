@@ -92,15 +92,21 @@ header {
 
 /* Hero Style
 ------------------------------------ */
+
 #hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 58px;
-  padding-block: 64px;
+  padding-block-start: 64px;
   text-align: center;
   background-image: url("../img/header-illsutration-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid red;
 }
 
 #hero > * {
@@ -112,12 +118,11 @@ header {
   color: #172b4d;
 }
 
-.hero-heading-intro,
-.hero-heading-title {
+.hero-heading-intro {
   font-size: 40px;
 }
 
-.hero-heading-title {
+.hero-heading-intro span {
   color: #36b37e;
 }
 
@@ -158,7 +163,6 @@ header {
 /* Portfolio Style
 ------------------------------------ */
 #portfolio {
-  margin-block-start: -108px;
   padding-block: 68px;
 }
 
