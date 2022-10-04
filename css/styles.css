@@ -157,7 +157,7 @@ header {
 /* Portfolio Style
 ------------------------------------ */
 .portfolio-wrapper {
-  margin-block-start: -20px;
+  margin-block-start: -64px;
   padding: 22px 24px 68px;
   text-align: center;
 }
@@ -259,8 +259,7 @@ header {
 
 /* About Style
 ------------------------------------ */
-.about-wrapper > * {
-  padding-inline: 20px;
+.about-wrapper {
   text-align: center;
 }
 
@@ -276,7 +275,7 @@ header {
 }
 
 .about-content-header {
-  margin-inline: 20px;
+  margin-inline: 24px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -285,6 +284,7 @@ header {
 }
 
 .about-content-text {
+  margin-inline: 12px;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -315,6 +315,7 @@ header {
 
 /* Creating a grid items wrapping effect */
 .about-tech {
+  padding-inline: 24px;
   padding-block: 59px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -374,12 +375,41 @@ header {
 
 /* Contact Style
 ------------------------------------ */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 24px;
+  padding-block-end: 7px;
+  background-image: url("../img/contact.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 47px -11px;
+}
+
 .contact-content-intro {
+  flex-basis: 100%;
+  margin-block-end: 58px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   color: #172B4D;
+}
+
+.contact-content-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-block-end: 44px;
+}
+
+.contact-content-form > *:not(input[type="submit"]) {
+  display: block;
+  width: 100%;
 }
 
 .contact-content-btn {
@@ -402,4 +432,11 @@ header {
 
 .contact-content-btn:active {
   background-color: #008552;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
