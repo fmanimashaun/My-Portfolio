@@ -99,16 +99,12 @@ header {
   justify-content: center;
   align-items: center;
   gap: 58px;
-  padding-block-start: 64px;
+  padding: 64px 24px;
   text-align: center;
   background-image: url("../img/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.hero-wrapper > * {
-  margin-inline: 24px;
 }
 
 .hero-heading {
@@ -161,11 +157,8 @@ header {
 /* Portfolio Style
 ------------------------------------ */
 .portfolio-wrapper {
-  padding-block: 22px 68px;
-}
-
-.portfolio-wrapper > * {
-  margin-inline: 20px;
+  margin-block-start: -64px;
+  padding: 22px 24px 68px;
   text-align: center;
 }
 
@@ -266,8 +259,7 @@ header {
 
 /* About Style
 ------------------------------------ */
-.about-wrapper > * {
-  padding-inline: 20px;
+.about-wrapper {
   text-align: center;
 }
 
@@ -283,7 +275,7 @@ header {
 }
 
 .about-content-header {
-  margin-inline: 20px;
+  margin-inline: 24px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -292,6 +284,7 @@ header {
 }
 
 .about-content-text {
+  margin-inline: 12px;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -322,6 +315,7 @@ header {
 
 /* Creating a grid items wrapping effect */
 .about-tech {
+  padding-inline: 24px;
   padding-block: 59px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -377,4 +371,99 @@ header {
   color: #36b37e;
   background-color: #fff;
   border-radius: 8px;
+}
+
+/* Contact Style
+------------------------------------ */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 24px;
+  padding-block-end: 7px;
+  margin-block-end: 9px;
+  background-image: url("../img/contact.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 47px -11px;
+}
+
+.contact-content-intro {
+  flex-basis: 100%;
+  margin-block-end: 58px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.contact-content-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-block-end: 44px;
+}
+
+.contact-content-form > *:not(input[type="submit"]) {
+  display: block;
+  width: 100%;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+/* Styling the input field focus-visible */
+.contact-content-form input[type=text]:focus-visible,
+.contact-content-form input[type=email]:focus-visible,
+.contact-content-form textarea:focus-visible {
+  outline: 1px solid #60c095;
+}
+
+/* Styling the placeholder text across various browser */
+
+/* 1.  -webkit-input-placeholder: Chrome/Opera/Safari/Edge */
+
+/* 2.  -ms-input-placeholder: Microsoft Edge and IE 10 + */
+.contact-content-form::-webkit-input-placeholder,
+.contact-content-form::-ms-input-placeholder {
+  /* Chrome/Opera/Safari/Edge */
+  color: #6b778c;
+}
+
+.contact-content-btn {
+  width: fit-content;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-content-btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.contact-content-btn:active {
+  background-color: #008552;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
