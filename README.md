@@ -40,7 +40,7 @@ The project is focus on create a professional portfolio site to showcase my prof
 
 <h3 align="center">Mobile View</h3>
 <p align="center">
-  <img height="800" src="screenshots/mobile_view.png">
+  <img height="200" src="screenshots/mobile_view.png">
 </P>
 
 
