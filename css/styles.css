@@ -381,6 +381,7 @@ header {
   align-items: center;
   padding-inline: 24px;
   padding-block-end: 7px;
+  margin-block-end: 9px;
   background-image: url("../img/contact.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -410,6 +411,32 @@ header {
 .contact-content-form > *:not(input[type="submit"]) {
   display: block;
   width: 100%;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+/* Styling the input field focus-visible */
+.contact-content-form input[type=text]:focus-visible,
+.contact-content-form input[type=email]:focus-visible,
+.contact-content-form textarea:focus-visible {
+  outline: 1px solid #60c095;
+}
+
+/* Styling the placeholder text across various browser */
+
+/* 1.  -webkit-input-placeholder: Chrome/Opera/Safari/Edge */
+
+/* 2.  -ms-input-placeholder: Microsoft Edge and IE 10 + */
+.contact-content-form::-webkit-input-placeholder,
+.contact-content-form::-ms-input-placeholder {
+  /* Chrome/Opera/Safari/Edge */
+  color: #6b778c;
 }
 
 .contact-content-btn {
