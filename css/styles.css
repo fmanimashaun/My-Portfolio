@@ -296,13 +296,17 @@ header {
   background-position: center;
 }
 
+.about-content > * {
+  max-inline-size: 920px;
+  padding-inline: 12px;
+  margin: auto;
+}
 
 .about-content > * + * {
   margin-block-start: 24px;
 }
 
 .about-content-header {
-  margin-inline: 24px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -311,7 +315,6 @@ header {
 }
 
 .about-content-text {
-  margin-inline: 12px;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -342,11 +345,13 @@ header {
 
 /* Creating a grid items wrapping effect */
 .about-tech {
-  padding-inline: 24px;
-  padding-block: 59px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px 24px;
+  padding-inline: 24px;
+  padding-block: 59px;
+  max-inline-size: 1179px;
+  margin-inline: auto;
 }
 
 .about-tech-stack {
@@ -406,9 +411,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-inline-size: 1179px;
   padding-inline: 24px;
   padding-block-end: 7px;
-  margin-block-end: 9px;
+  margin: 9px auto;
   background-image: url("../img/contact.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -418,6 +424,7 @@ header {
 .contact-content-intro {
   flex-basis: 100%;
   margin-block-end: 58px;
+  max-inline-size: 463px;
   font-weight: 700;
   font-size: var(--fs-2);
   line-height: 52px;
@@ -490,7 +497,24 @@ header {
 
 .contact-social {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  .contact-content {
+      flex-direction: row;
+      gap: 24px;
+      align-items: stretch;
+      padding-block-end: 0;
+  }
+
+    .contact-content > * {
+      margin: 0;
+    }
+
+    .contact-content-intro {
+      margin-block: auto;
+    }
 }
