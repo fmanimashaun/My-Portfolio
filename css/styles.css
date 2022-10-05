@@ -424,7 +424,7 @@ header {
 .contact-content-intro {
   flex-basis: 100%;
   margin-block-end: 58px;
-  max-inline-size: 463px;
+  max-inline-size: 464px;
   font-weight: 700;
   font-size: var(--fs-2);
   line-height: 52px;
@@ -502,19 +502,19 @@ header {
   gap: 20px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .contact-content {
-      flex-direction: row;
-      gap: 24px;
-      align-items: stretch;
-      padding-block-end: 0;
+    flex-direction: row;
+    gap: 24px;
+    align-items: stretch;
+    padding-block-end: 0;
   }
 
-    .contact-content > * {
-      margin: 0;
-    }
+  .contact-content > * {
+    margin: 0;
+  }
 
-    .contact-content-intro {
-      margin-block: auto;
-    }
+  .contact-content-intro {
+    margin-block: auto;
+  }
 }
