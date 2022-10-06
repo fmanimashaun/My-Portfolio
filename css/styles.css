@@ -11,6 +11,7 @@
 :root {
   /* Default font size */
   font-size: 16px;
+
   /* Custom fonts */
 
   /* 28px to 32px */
@@ -165,9 +166,11 @@ header {
   width: 20px;
   height: 20px;
 }
+
 .action {
   width: 100%;
 }
+
 .hero-scroll-arrow {
   display: inline-block;
   margin-block: 4px;
@@ -422,6 +425,7 @@ header {
   margin-block: -69px 17px;
   padding-block-start: 64px;
 }
+
 .contact-content {
   display: flex;
   flex-direction: column;
