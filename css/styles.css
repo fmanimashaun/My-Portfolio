@@ -25,6 +25,9 @@
 
   /* 52px to 60px */
   --fs-4: clamp(3.25rem, calc(3.07rem + 0.75vw), 3.75rem);
+
+  /* Custom margin spacing */
+  --margin-1: clamp(4.00rem, calc(1.89rem + 9.01vw), 10.00rem);
 }
 
 body {
@@ -119,7 +122,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 58px;
-  padding: 64px 24px;
+  padding: var(--margin-1) 24px;
   text-align: center;
   background-image: url("../img/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
