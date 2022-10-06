@@ -9,6 +9,8 @@
 /* Global styles
 ------------------------------------ */
 :root {
+  /* Default font size */
+  font-size: 16px;
   /* Custom fonts */
 
   /* 28px to 32px */
@@ -89,7 +91,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 24px;
+  padding: 10px 24px;
+  border: 1px solid red;
 }
 
 .welcome {
@@ -121,10 +124,12 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border: 1px solid green;
 }
 
 .hero-wrapper > * {
   max-inline-size: 920px;
+  border: 1px solid red;
 }
 
 .hero-heading {
@@ -160,9 +165,12 @@ header {
   width: 20px;
   height: 20px;
 }
-
+.action {
+  width: 100%;
+}
 .hero-scroll-arrow {
   display: inline-block;
+  margin-block: 4px;
   padding: 8px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -178,9 +186,10 @@ header {
 /* Portfolio Style
 ------------------------------------ */
 .portfolio-wrapper {
-  margin-block-start: -64px;
-  padding: 22px 24px 68px;
+  margin-block-start: -110px;
+  padding: 64px 24px 68px;
   text-align: center;
+  border: 1px solid green;
 }
 
 .portfolio-wrapper > * {
@@ -287,6 +296,9 @@ header {
 ------------------------------------ */
 .about-wrapper {
   text-align: center;
+  border: 1px solid yellow;
+  margin-block-start: -64px;
+  padding-block: 64px;
 }
 
 .about-content {
@@ -349,7 +361,6 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px 24px;
   padding-inline: 24px;
-  padding-block: 59px;
   max-inline-size: 1179px;
   margin-inline: auto;
 }
@@ -407,6 +418,10 @@ header {
 
 /* Contact Style
 ------------------------------------ */
+.contact-wrapper {
+  margin-block: -69px 17px;
+  padding-block-start: 64px;
+}
 .contact-content {
   display: flex;
   flex-direction: column;
@@ -521,6 +536,10 @@ header {
     line-height: 20px;
     color: #344563;
     text-decoration: none;
+  }
+
+  .desktop.nav-links li a:hover {
+    text-decoration: underline;
   }
 
   .contact-content {
