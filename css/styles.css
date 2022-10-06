@@ -503,6 +503,26 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    display: none;
+  }
+
+  /* show the desktop menu in the desktop view */
+  .desktop.nav-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+    padding-block: 26px;
+  }
+
+  .desktop.nav-links li a {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
+  }
+
   .contact-content {
     flex-direction: row;
     gap: 24px;
