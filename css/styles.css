@@ -25,9 +25,6 @@
 
   /* 52px to 60px */
   --fs-4: clamp(3.25rem, calc(3.07rem + 0.75vw), 3.75rem);
-
-  /* Custom margin spacing */
-  --margin-1: clamp(4.00rem, calc(1.89rem + 9.01vw), 10.00rem);
 }
 
 body {
@@ -96,7 +93,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 24px;
-  border: 1px solid red;
 }
 
 .welcome {
@@ -116,24 +112,27 @@ header {
 /* Hero Style
 ------------------------------------ */
 .hero-wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 58px;
-  padding: var(--margin-1) 24px;
+
+  /* Custom margin spacing 58px to 24px */
+  gap: clamp(3.63rem, calc(4.37rem + -3.19vw), 1.5rem);
+
+  /* Custom margin spacing  64px to 160px */
+  padding-block-start: clamp(4rem, calc(1.89rem + 9.01vw), 10rem);
+  padding-block-end: clamp(4.00rem, calc(-2.69rem + 28.54vw), 23.00rem);
+  padding-inline: 24px;
   text-align: center;
   background-image: url("../img/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: 1px solid green;
+  background-size: contain;
+  background-position-x: center;
 }
 
 .hero-wrapper > * {
   max-inline-size: 920px;
-  border: 1px solid red;
 }
 
 .hero-heading {
@@ -151,6 +150,7 @@ header {
 }
 
 .hero-content-text {
+  margin-inline: clamp(0.00rem, calc(-1.65rem + 7.04vw), 4.69rem);
   font-size: 20px;
   font-weight: 400;
   line-height: var(--fs-1);
@@ -172,6 +172,12 @@ header {
 
 .action {
   width: 100%;
+
+  /* Custom margin spacing 0px to 50px */
+  padding-block-start: clamp(0rem, calc(-1.1rem + 4.69vw), 3.13rem);
+
+  /* Custom margin spacing 0px to 24px */
+  padding-block-end: clamp(0rem, calc(-0.53rem + 2.25vw), 1.5rem);
 }
 
 .hero-scroll-arrow {
@@ -192,10 +198,16 @@ header {
 /* Portfolio Style
 ------------------------------------ */
 .portfolio-wrapper {
-  margin-block-start: -110px;
-  padding: 64px 24px 68px;
+  /* Custom margin spacing -111px to 22.7px */
+  margin-block-start: clamp(-6.94rem, calc(-9.89rem + 12.58vw), 1.44rem);
+
+  /* Custom margin spacing 64px to 80px */
+  padding-block-start: clamp(4rem, calc(3.65rem + 1.5vw), 5rem);
+
+  /* Custom margin spacing 68px to 84px */
+  padding-block-end: clamp(4.25rem, calc(3.9rem + 1.5vw), 5.25rem);
+  padding-inline: 24px;
   text-align: center;
-  border: 1px solid green;
 }
 
 .portfolio-wrapper > * {
@@ -204,7 +216,8 @@ header {
 }
 
 .portfolio-wrapper > * + * {
-  margin-block-start: 62px;
+  /* Custom margin spacing 58px to 48px */
+  margin-block-start: clamp(3.63rem, calc(3.85rem + -0.94vw), 3rem);
 }
 
 .portfolio-header {
@@ -302,15 +315,25 @@ header {
 ------------------------------------ */
 .about-wrapper {
   text-align: center;
-  border: 1px solid yellow;
-  margin-block-start: -64px;
-  padding-block: 64px;
+  /* Custom margin spacing -64px to 28px */
+  margin-block-start: clamp(-4.00rem, calc(-6.02rem + 8.64vw), 1.75rem);
+
+  /* Custom margin spacing 64px to 80px */
+  padding-block-start: clamp(4rem, calc(3.65rem + 1.5vw), 5rem);
+
+  /* Custom margin spacing 68px to 84px */
+  padding-block-end: clamp(4.25rem, calc(3.9rem + 1.5vw), 5.25rem);
+}
+
+.about-wrapper > * + * {
+  /* Custom margin spacing 58px to 48px */
+  margin-block-start: clamp(3.63rem, calc(3.85rem + -0.94vw), 3rem);
 }
 
 .about-content {
   background-image: url("../img/illustration-about-me-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: center;
   background-position: center;
 }
 
@@ -425,8 +448,16 @@ header {
 /* Contact Style
 ------------------------------------ */
 .contact-wrapper {
-  margin-block: -69px 17px;
-  padding-block-start: 64px;
+  /* Custom margin spacing -69px to 0px */
+  margin-block-start: clamp(-4.31rem, calc(-5.83rem + 6.48vw), 0rem);
+
+  /* Custom margin spacing 64px to 80px */
+  padding-block: clamp(4rem, calc(3.65rem + 1.5vw), 5rem);
+  background-image: url("../img/contact.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: center;
 }
 
 .contact-content {
@@ -437,10 +468,6 @@ header {
   padding-inline: 24px;
   padding-block-end: 7px;
   margin: 9px auto;
-  background-image: url("../img/contact.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 47px -11px;
 }
 
 .contact-content-intro {
@@ -464,7 +491,7 @@ header {
   margin-block-end: 44px;
 }
 
-.contact-content-form > *:not(input[type="submit"]) {
+.contact-content-form *:not(input[type="submit"]) {
   display: block;
   width: 100%;
   padding: 15px 16px;
@@ -475,6 +502,10 @@ header {
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
+}
+
+.contact-content-form p.alt_name_field {
+  display: none;
 }
 
 /* Styling the input field focus-visible */
@@ -522,6 +553,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  /* Custom margin spacing -46px to 145px */
+  margin-block-start: clamp(-2.87rem, calc(-7.08rem + 17.93vw), 9.06rem);
+  padding-block: 26px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -529,12 +564,24 @@ header {
     display: none;
   }
 
+  main {
+    display: relative;
+  }
+
   /* show the desktop menu in the desktop view */
   .desktop.nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     column-gap: 32px;
-    padding-block: 26px;
+    padding-block: 16px;
+  }
+
+  .desktop.nav-links li {
+    padding-block: 10px;
   }
 
   .desktop.nav-links li a {
@@ -547,6 +594,19 @@ header {
 
   .desktop.nav-links li a:hover {
     text-decoration: underline;
+  }
+
+  .hero-wrapper {
+    padding-block-start: cals(72px + clamp(4rem, calc(1.89rem + 9.01vw), 10rem));
+    background-image: url("../img/Header-llustration-desktop.svg");
+  }
+
+  .portfolio-header {
+    padding-block-end: 0;
+  }
+
+  .portfolio-header::before {
+    display: none;
   }
 
   .contact-content {
@@ -563,4 +623,38 @@ header {
   .contact-content-intro {
     margin-block: auto;
   }
+
+
+  /* For future use only */
+
+  /*
+  .contact-content-form p.alt_name_field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+  }
+*/
+  .contact-content-btn {
+    align-self: flex-start;
+  }
 }
+
+/* For future use only */
+
+/*
+@media only screen and (min-width: 1024px) {
+  .contact-content-form p.alt_name_field {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      padding: 0;
+      margin: 0;
+    }
+}
+*/
