@@ -122,7 +122,7 @@ header {
 
   /* Custom margin spacing  64px to 160px */
   padding-block-start: clamp(4rem, calc(1.89rem + 9.01vw), 10rem);
-  padding-block-end: clamp(4.00rem, calc(-2.69rem + 28.54vw), 23.00rem);
+  padding-block-end: clamp(4rem, calc(-2.69rem + 28.54vw), 23rem);
   padding-inline: 24px;
   text-align: center;
   background-image: url("../img/header-illsutration-mobile.svg");
@@ -150,7 +150,7 @@ header {
 }
 
 .hero-content-text {
-  margin-inline: clamp(0.00rem, calc(-1.65rem + 7.04vw), 4.69rem);
+  margin-inline: clamp(0rem, calc(-1.65rem + 7.04vw), 4.69rem);
   font-size: 20px;
   font-weight: 400;
   line-height: var(--fs-1);
@@ -315,8 +315,9 @@ header {
 ------------------------------------ */
 .about-wrapper {
   text-align: center;
+
   /* Custom margin spacing -64px to 28px */
-  margin-block-start: clamp(-4.00rem, calc(-6.02rem + 8.64vw), 1.75rem);
+  margin-block-start: clamp(-4rem, calc(-6.02rem + 8.64vw), 1.75rem);
 
   /* Custom margin spacing 64px to 80px */
   padding-block-start: clamp(4rem, calc(3.65rem + 1.5vw), 5rem);
