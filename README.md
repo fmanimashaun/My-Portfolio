@@ -11,8 +11,8 @@ The project is focus on create a professional portfolio site to showcase my prof
 
 - [x] Setting up the initial project structure
 - [x] mobile version skeleton
-- [ ] Contact form
-- [ ] Desktop version
+- [x] Contact form
+- [x] Desktop version
 - [ ] Application deploy
 - [ ] Evaluate accessibility
 - [ ] Mobile menu
