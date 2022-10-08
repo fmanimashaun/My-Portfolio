@@ -81,9 +81,11 @@
 						</a>
 					</li>
 				</ul>
-				<a class="hero-scroll-arrow" href="#portfolio">
-					<img class="arrow-img" src="img/down-arrow.png" alt="scrolling down arrow icon">
-				</a>
+				<div class="action">
+					<a class="hero-scroll-arrow" href="#portfolio">
+						<img class="arrow-img" src="img/down-arrow.png" alt="scrolling down arrow icon">
+					</a>
+				</div>
 			</section>
 
 			<!-- *********************** PROJECTS  *********************** -->
@@ -235,41 +237,46 @@
 				<article class="contact-content">
 					<h2 class="contact-content-intro">I'm always interested in hearing about new projects, so if you'd like to
 						chat please get in touch.</h2>
-					<form action="https://formspree.io/f/xeqdkpln" method="POST" class="contact-content-form">
-						<input type="text" name="name" id="name" maxlength="30" placeholder="Full name" required>
+					<form action="https://formspree.io/f/mzbwvpev" method="POST" class="contact-content-form">
+						<input type="text" name="full_name" id="full_name" maxlength="30" placeholder="Full name">
+						<p class="alt_name_field">
+							<input type="text" name="first_name" id="first_name" maxlength="30" placeholder="First Name" required>
+							<input type="text" name="last_name" id="last_name" maxlength="30" placeholder="Last Name" required>
+						</p>
 						<input type="email" name="email" id="email" placeholder="Email address" required>
-						<textarea name="message" id="message" maxlength="500" cols="30" rows="4" placeholder="Enter text here" required></textarea>
+						<textarea name="message" id="message" maxlength="500" cols="30" rows="4" placeholder="Enter text here"
+							required></textarea>
 						<input class="contact-content-btn" type="submit" value="Get in touch">
 					</form>
-					<ul class="contact-social">
-						<li>
-							<a href="https://twitter.com/fmanimashaun" target="_blank">
-								<img class="social-img" src="img/twitter.svg" alt="twitter icon">
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/fmanimashaun/" target="_blank">
-								<img class="social-img" src="img/Linkedin.svg" alt="Linkedin icon">
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-								<img class="social-img" src="img/medium.svg" alt="medium icon">
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/fmanimashaun" target="_blank">
-								<img class="social-img" src="img/github.svg" alt="github icon">
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-								<img class="social-img" src="img/Vector.svg" alt="unknown icon">
-							</a>
-						</li>
-					</ul>
 				</article>
 			</section>
+			<ul class="contact-social">
+				<li>
+					<a href="https://twitter.com/fmanimashaun" target="_blank">
+						<img class="social-img" src="img/twitter.svg" alt="twitter icon">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/fmanimashaun/" target="_blank">
+						<img class="social-img" src="img/Linkedin.svg" alt="Linkedin icon">
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<img class="social-img" src="img/medium.svg" alt="medium icon">
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/fmanimashaun" target="_blank">
+						<img class="social-img" src="img/github.svg" alt="github icon">
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<img class="social-img" src="img/Vector.svg" alt="unknown icon">
+					</a>
+				</li>
+			</ul>
 		</footer>
 	</div>
 	<script src="js/index.js"></script>
