@@ -151,7 +151,7 @@ header {
   line-height: var(--fs-4);
 }
 
-.hero-heading-intro span {
+.hero-heading-intro span.title {
   color: #36b37e;
 }
 
@@ -622,8 +622,7 @@ header {
   .desktop.nav-links li a:hover,
   .desktop.nav-links li a:focus {
     border-radius: 10px;
-    background-color: #344563;
-    color: #fff;
+    background-color: #34456357;
   }
 
 
