@@ -214,7 +214,6 @@ header {
   padding-block-end: clamp(4.25rem, calc(3.9rem + 1.5vw), 5.25rem);
   padding-inline: 24px;
   text-align: center;
-  border: 1px solid purple;
 }
 
 .portfolio-wrapper > * {
