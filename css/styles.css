@@ -93,6 +93,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 24px;
+  border: 1px solid red;
 }
 
 .welcome {
@@ -125,10 +126,17 @@ header {
   padding-block-end: clamp(4rem, calc(-2.69rem + 28.54vw), 23rem);
   padding-inline: 24px;
   text-align: center;
+}
+
+
+.hero-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background-image: url("../img/header-illsutration-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: center;
+  background-size: 100% 100%;
 }
 
 .hero-wrapper > * {
@@ -208,6 +216,7 @@ header {
   padding-block-end: clamp(4.25rem, calc(3.9rem + 1.5vw), 5.25rem);
   padding-inline: 24px;
   text-align: center;
+  border: 1px solid purple;
 }
 
 .portfolio-wrapper > * {
@@ -314,6 +323,7 @@ header {
 /* About Style
 ------------------------------------ */
 .about-wrapper {
+  position: relative;
   text-align: center;
 
   /* Custom margin spacing -64px to 28px */
@@ -331,15 +341,35 @@ header {
   margin-block-start: clamp(3.63rem, calc(3.85rem + -0.94vw), 3rem);
 }
 
-.about-content {
-  background-image: url("../img/illustration-about-me-mobile.svg");
+/*
+.about-wrapper img.about-bg {
+  position: absolute;
+  display: block;
+  left: 0;
+ width: 100%;
+  height: 389px;
+  border: 1px solid red;
+  margin-block-start: -30px;
+}
+*/
+
+.about-content::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
-  background-size: center;
-  background-position: center;
+  background-size: 100% 382px;
+  border: 1px solid red;
 }
 
+
 .about-content > * {
-  max-inline-size: 920px;
+  max-inline-size: 800px;
   padding-inline: 12px;
   margin: auto;
 }
@@ -449,16 +479,12 @@ header {
 /* Contact Style
 ------------------------------------ */
 .contact-wrapper {
+  position: relative;
   /* Custom margin spacing -69px to 0px */
   margin-block-start: clamp(-4.31rem, calc(-5.83rem + 6.48vw), 0rem);
 
   /* Custom margin spacing 64px to 80px */
   padding-block: clamp(4rem, calc(3.65rem + 1.5vw), 5rem);
-  background-image: url("../img/contact.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-origin: border-box;
-  background-position: center;
 }
 
 .contact-content {
@@ -469,6 +495,21 @@ header {
   padding-inline: 24px;
   padding-block-end: 7px;
   margin: 9px auto;
+}
+
+.contact-content::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/contact-illsutration-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 40px 142px;
+  background-position: right bottom;
+  border: 1px solid red;
 }
 
 .contact-content-intro {
@@ -561,20 +602,18 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  header {
+
+  .welcome,
+  .menu-btn {
     display: none;
   }
 
-  main {
-    display: relative;
+  nav {
+    width: 100%;
   }
 
   /* show the desktop menu in the desktop view */
   .desktop.nav-links {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     display: flex;
     justify-content: center;
     column-gap: 32px;
@@ -598,7 +637,11 @@ header {
   }
 
   .hero-wrapper {
-    padding-block-start: cals(72px + clamp(4rem, calc(1.89rem + 9.01vw), 10rem));
+    padding-block-start: clamp(4rem, calc(1.89rem + 9.01vw), 10rem);
+
+  }
+
+  .hero-wrapper::before {
     background-image: url("../img/Header-llustration-desktop.svg");
   }
 
@@ -610,11 +653,40 @@ header {
     display: none;
   }
 
+  .about-content::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/about-llustration-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 331px;
+    border: 1px solid red;
+  }
+
   .contact-content {
     flex-direction: row;
     gap: 24px;
     align-items: stretch;
     padding-block-end: 0;
+  }
+
+  .contact-content::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/contact-illsutration-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 496px;
+    background-position: right bottom;
+    border: 1px solid red;
   }
 
   .contact-content > * {
@@ -625,36 +697,7 @@ header {
     margin-block: auto;
   }
 
-  /* For future use only */
-
-  /*
-  .contact-content-form p.alt_name_field {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    padding: 0;
-    margin: 0;
-  }
-*/
   .contact-content-btn {
     align-self: flex-start;
   }
 }
-
-/* For future use only */
-
-/*
-@media only screen and (min-width: 1024px) {
-  .contact-content-form p.alt_name_field {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
-      padding: 0;
-      margin: 0;
-    }
-}
-*/
