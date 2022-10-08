@@ -28,19 +28,19 @@ The project is focus on create a professional portfolio site to showcase my prof
 
 <h3 align="center">Desktop View</h3>
 <p align="center">
-  <img width="1440" height="900" src="screenshots/desktop_demo.png">
+  <img width="1440" src="screenshots/desktop_view.png">
 </P>
 
 
 <h3 align="center">Tablet View</h3>
 <p align="center">
-  <img width="768" height="1024" src="screenshots/tablet_demo.png">
+  <img width="768" src="screenshots/tablet_view.png">
 </P>
 
 
 <h3 align="center">Mobile View</h3>
 <p align="center">
-  <img height="200" src="screenshots/mobile_view.png">
+  <img width="375" src="screenshots/mobile_view.png">
 </P>
 
 
