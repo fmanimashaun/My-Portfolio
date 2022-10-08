@@ -585,6 +585,10 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    padding: 0;
+  }
+
   .welcome,
   .menu-btn {
     display: none;
@@ -598,25 +602,30 @@ header {
   .desktop.nav-links {
     display: flex;
     justify-content: center;
-    column-gap: 32px;
-    padding-block: 16px;
+    column-gap: 8px;
   }
 
   .desktop.nav-links li {
-    padding-block: 10px;
+    padding-block: 16px;
   }
 
   .desktop.nav-links li a {
+    padding: 10px 12px;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
     text-decoration: none;
+    transition: all 0.5s ease-out;
   }
 
-  .desktop.nav-links li a:hover {
-    text-decoration: underline;
+  .desktop.nav-links li a:hover,
+  .desktop.nav-links li a:focus {
+    border-radius: 10px;
+    background-color: #344563;
+    color: #fff;
   }
+
 
   .hero-wrapper {
     padding-block-start: clamp(4rem, calc(1.89rem + 9.01vw), 10rem);
