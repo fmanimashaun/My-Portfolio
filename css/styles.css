@@ -93,7 +93,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 24px;
-  border: 1px solid red;
 }
 
 .welcome {
@@ -127,7 +126,6 @@ header {
   padding-inline: 24px;
   text-align: center;
 }
-
 
 .hero-wrapper::before {
   position: absolute;
@@ -341,18 +339,6 @@ header {
   margin-block-start: clamp(3.63rem, calc(3.85rem + -0.94vw), 3rem);
 }
 
-/*
-.about-wrapper img.about-bg {
-  position: absolute;
-  display: block;
-  left: 0;
- width: 100%;
-  height: 389px;
-  border: 1px solid red;
-  margin-block-start: -30px;
-}
-*/
-
 .about-content::before {
   position: absolute;
   content: "";
@@ -364,9 +350,7 @@ header {
   background-image: url("../img/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 382px;
-  border: 1px solid red;
 }
-
 
 .about-content > * {
   max-inline-size: 800px;
@@ -480,6 +464,7 @@ header {
 ------------------------------------ */
 .contact-wrapper {
   position: relative;
+
   /* Custom margin spacing -69px to 0px */
   margin-block-start: clamp(-4.31rem, calc(-5.83rem + 6.48vw), 0rem);
 
@@ -509,7 +494,6 @@ header {
   background-repeat: no-repeat;
   background-size: 40px 142px;
   background-position: right bottom;
-  border: 1px solid red;
 }
 
 .contact-content-intro {
@@ -602,7 +586,6 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-
   .welcome,
   .menu-btn {
     display: none;
@@ -638,7 +621,6 @@ header {
 
   .hero-wrapper {
     padding-block-start: clamp(4rem, calc(1.89rem + 9.01vw), 10rem);
-
   }
 
   .hero-wrapper::before {
@@ -664,7 +646,6 @@ header {
     background-image: url("../img/about-llustration-desktop.png");
     background-repeat: no-repeat;
     background-size: 100% 331px;
-    border: 1px solid red;
   }
 
   .contact-content {
@@ -686,7 +667,6 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 496px;
     background-position: right bottom;
-    border: 1px solid red;
   }
 
   .contact-content > * {
@@ -699,5 +679,9 @@ header {
 
   .contact-content-btn {
     align-self: flex-start;
+  }
+
+  .contact-social {
+    border-block-start: 1px solid #dfe1e6;
   }
 }
