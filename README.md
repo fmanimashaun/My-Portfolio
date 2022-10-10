@@ -13,7 +13,7 @@ The project is focus on create a professional portfolio site to showcase my prof
 - [x] mobile version skeleton
 - [x] Contact form
 - [x] Desktop version
-- [ ] Application deploy
+- [x] Application deploy
 - [ ] Evaluate accessibility
 - [ ] Mobile menu
 - [ ] Details modal
@@ -21,7 +21,7 @@ The project is focus on create a professional portfolio site to showcase my prof
 - [ ] Preserve data in the browser
 - [ ] Finalising the project page
 
-> [Live Demo Link](https://fmanimashaun.com/)
+> [Live Demo Link](https://fmanimashaun.github.io/My-Portfolio/)
 
 
 ## Screenshots
