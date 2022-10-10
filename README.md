@@ -4,7 +4,7 @@
 
 ## Overview
 
-The project is focus on create a professional portfolio site to showcase my professional skills and experience while highlighting some of my real-life projects and other professional contributions to give an insight into my professional capacity and uniqueness. The Live site can be view from [my personal site](https://fmanimashaun.com/).
+The project is focus on create a professional portfolio site to showcase my professional skills and experience while highlighting some of my real-life projects and other professional contributions to give an insight into my professional capacity and uniqueness. The Live site can be view from [my personal site](https://fmanimashaun.github.io/My-Portfolio/).
 
 
 ## Project Tasks List (Working-in-progress)
@@ -13,7 +13,7 @@ The project is focus on create a professional portfolio site to showcase my prof
 - [x] mobile version skeleton
 - [x] Contact form
 - [x] Desktop version
-- [ ] Application deploy
+- [x] Application deploy
 - [ ] Evaluate accessibility
 - [ ] Mobile menu
 - [ ] Details modal
@@ -21,7 +21,7 @@ The project is focus on create a professional portfolio site to showcase my prof
 - [ ] Preserve data in the browser
 - [ ] Finalising the project page
 
-> [Live Demo Link](https://fmanimashaun.com/)
+> [Live Demo Link](https://fmanimashaun.github.io/My-Portfolio/)
 
 
 ## Screenshots
