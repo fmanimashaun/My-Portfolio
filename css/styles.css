@@ -152,7 +152,7 @@ header {
 }
 
 .hero-heading-intro span.title {
-  color: #36b37e;
+  color: #0e6b44;
 }
 
 .hero-content-text {
@@ -243,13 +243,13 @@ header {
   left: calc((100% - 48px) / 2);
   width: 48px;
   height: 1px;
-  border-bottom: 4px solid #36b37e;
+  border-bottom: 4px solid #0e6b44;
 }
 
 /* Creating a grid items wrapping effect */
 .portfolio-project {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px 24px;
 }
 
@@ -303,7 +303,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #36b37f;
+  background: #0e6b44;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -384,7 +384,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #36b37f;
+  background: #0e6b44;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -401,7 +401,7 @@ header {
 /* Creating a grid items wrapping effect */
 .about-tech {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px 24px;
   padding-inline: 24px;
   max-inline-size: 1179px;
@@ -454,7 +454,7 @@ header {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: #0e6b44;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -559,7 +559,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #36b37f;
+  background: #0e6b44;
   border-radius: 4px;
   border: none;
   cursor: pointer;
