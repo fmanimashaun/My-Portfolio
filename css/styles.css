@@ -149,7 +149,7 @@ header {
 }
 
 .hero-heading span.title {
-  color: #0e6b44;
+  color: #008552;
 }
 
 .hero-content {
@@ -240,7 +240,7 @@ header {
   left: calc((100% - 48px) / 2);
   width: 48px;
   height: 1px;
-  border-bottom: 4px solid #0e6b44;
+  border-bottom: 4px solid #008552;
 }
 
 /* Creating a grid items wrapping effect */
@@ -301,7 +301,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #0e6b44;
+  background: #008552;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -309,10 +309,15 @@ header {
 
 .project-item-btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: #36b37f;
 }
 
 .project-item-btn:active {
   background-color: #008552;
+}
+
+.project-item-btn:focus-visible {
+  background-color: #36b37f;
 }
 
 /* About Style
@@ -382,7 +387,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #0e6b44;
+  background: #008552;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -390,10 +395,15 @@ header {
 
 .about-content-btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: #36b37f;
 }
 
 .about-content-btn:active {
   background-color: #008552;
+}
+
+.about-content-btn:focus-visible {
+  background-color: #36b37f;
 }
 
 /* Creating a grid items wrapping effect */
@@ -558,7 +568,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #0e6b44;
+  background: #008552;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -566,10 +576,15 @@ header {
 
 .contact-content-btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: #36b37f;
 }
 
 .contact-content-btn:active {
   background-color: #008552;
+}
+
+.contact-content-btn:focus-visible {
+  background-color: #36b37f;
 }
 
 .contact-social {
