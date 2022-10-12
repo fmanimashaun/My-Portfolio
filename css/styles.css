@@ -144,18 +144,15 @@ header {
 .hero-heading {
   font-weight: 700;
   color: #172b4d;
-}
-
-.hero-heading-intro {
   font-size: var(--fs-3);
   line-height: var(--fs-4);
 }
 
-.hero-heading-intro span.title {
+.hero-heading span.title {
   color: #0e6b44;
 }
 
-.hero-content-text {
+.hero-content {
   margin-inline: clamp(0rem, calc(-1.65rem + 7.04vw), 4.69rem);
   font-size: 20px;
   font-weight: 400;
