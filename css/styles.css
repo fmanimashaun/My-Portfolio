@@ -538,10 +538,6 @@ header {
   border-radius: 4px;
 }
 
-.contact-content-form p.alt_name_field {
-  display: none;
-}
-
 /* Styling the input field focus-visible */
 .contact-content-form input[type=text]:focus-visible,
 .contact-content-form input[type=email]:focus-visible,
