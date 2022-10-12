@@ -278,6 +278,7 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   gap: 8px;
+  padding-inline: 10px;
 }
 
 .project-item-stack li {
@@ -286,7 +287,7 @@ header {
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #3a4a42;
+  color: #172b4d;
   background: #ebf0ee;
   border-radius: 4px;
 }
@@ -443,6 +444,7 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   gap: 8px;
+  padding-inline: 10px;
 }
 
 .about-tech-items li {
@@ -451,7 +453,7 @@ header {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #0e6b44;
+  color: #172b4d;
   background-color: #fff;
   border-radius: 8px;
 }
