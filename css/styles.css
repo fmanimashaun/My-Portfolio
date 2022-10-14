@@ -144,18 +144,15 @@ header {
 .hero-heading {
   font-weight: 700;
   color: #172b4d;
-}
-
-.hero-heading-intro {
   font-size: var(--fs-3);
   line-height: var(--fs-4);
 }
 
-.hero-heading-intro span.title {
-  color: #36b37e;
+.hero-heading span.title {
+  color: #008552;
 }
 
-.hero-content-text {
+.hero-content {
   margin-inline: clamp(0rem, calc(-1.65rem + 7.04vw), 4.69rem);
   font-size: 20px;
   font-weight: 400;
@@ -243,13 +240,13 @@ header {
   left: calc((100% - 48px) / 2);
   width: 48px;
   height: 1px;
-  border-bottom: 4px solid #36b37e;
+  border-bottom: 4px solid #008552;
 }
 
 /* Creating a grid items wrapping effect */
 .portfolio-project {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px 24px;
 }
 
@@ -281,6 +278,7 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   gap: 8px;
+  padding-inline: 10px;
 }
 
 .project-item-stack li {
@@ -289,7 +287,7 @@ header {
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #3a4a42;
+  color: #172b4d;
   background: #ebf0ee;
   border-radius: 4px;
 }
@@ -303,7 +301,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #36b37f;
+  background: #008552;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -311,10 +309,15 @@ header {
 
 .project-item-btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: #36b37f;
 }
 
 .project-item-btn:active {
   background-color: #008552;
+}
+
+.project-item-btn:focus-visible {
+  background-color: #36b37f;
 }
 
 /* About Style
@@ -384,7 +387,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #36b37f;
+  background: #008552;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -392,16 +395,21 @@ header {
 
 .about-content-btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: #36b37f;
 }
 
 .about-content-btn:active {
   background-color: #008552;
 }
 
+.about-content-btn:focus-visible {
+  background-color: #36b37f;
+}
+
 /* Creating a grid items wrapping effect */
 .about-tech {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px 24px;
   padding-inline: 24px;
   max-inline-size: 1179px;
@@ -446,6 +454,7 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   gap: 8px;
+  padding-inline: 10px;
 }
 
 .about-tech-items li {
@@ -454,7 +463,7 @@ header {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: #008552;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -529,10 +538,6 @@ header {
   border-radius: 4px;
 }
 
-.contact-content-form p.alt_name_field {
-  display: none;
-}
-
 /* Styling the input field focus-visible */
 .contact-content-form input[type=text]:focus-visible,
 .contact-content-form input[type=email]:focus-visible,
@@ -559,7 +564,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #36b37f;
+  background: #008552;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -567,10 +572,15 @@ header {
 
 .contact-content-btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: #36b37f;
 }
 
 .contact-content-btn:active {
   background-color: #008552;
+}
+
+.contact-content-btn:focus-visible {
+  background-color: #36b37f;
 }
 
 .contact-social {

@@ -14,7 +14,7 @@ The project is focus on create a professional portfolio site to showcase my prof
 - [x] Contact form
 - [x] Desktop version
 - [x] Application deploy
-- [ ] Evaluate accessibility
+- [x] Evaluate accessibility
 - [ ] Mobile menu
 - [ ] Details modal
 - [ ] Validate contact form
