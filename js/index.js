@@ -6,17 +6,17 @@ const mobileMenuModal = document.querySelector('.mobile-menu-modal');
 const mobileMenuLinks = document.querySelector('.mobile');
 
 // add event listener for menu button to open mobile menu
-menuButton.addEventListener('click', function () {
+menuButton.addEventListener('click',  () => {
   mobileMenuModal.classList.toggle('close-menu');
 });
 
 // add event listener for close button to close mobile menu
-closeButton.addEventListener('click', function () {
+closeButton.addEventListener('click', () => {
   mobileMenuModal.classList.toggle('close-menu');
 });
 
 // add event listener to target each link item
-mobileMenuLinks.addEventListener('click', function (event) {
+mobileMenuLinks.addEventListener('click', event => {
   if (event.target.matches('a')) {
     mobileMenuModal.classList.toggle('close-menu');
   }

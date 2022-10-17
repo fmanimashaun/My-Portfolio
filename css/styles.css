@@ -111,7 +111,6 @@ body {
   cursor: pointer;
 }
 
-
 /* Hiding the desktop menu in the mobile view */
 .desktop.nav-links {
   display: none;
