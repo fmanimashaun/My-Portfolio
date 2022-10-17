@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 4px;
+  row-gap: calc(40px - 16px);
 }
 
 .mobile.nav-links li a {
@@ -99,7 +99,7 @@ body {
 .mobile.nav-links li a:focus {
   border-radius: 10px;
   background-color: #34456357;
-  padding: 0.2em;
+  padding: 8px;
 }
 
 .close-btn {
