@@ -62,7 +62,7 @@ body {
 ------------------------------------ */
 
 /* Styling for closing the mobile menu */
-.mobile-menu-modal.close-menu {
+.mobile-menu-modal.close {
   display: none;
 }
 
@@ -352,16 +352,20 @@ header {
   background-color: #36b37f;
 }
 
-.profolio-preview {
+.profolio-preview-modal.close {
+  display: none;
+}
+
+.profolio-preview-modal {
   position: fixed;
-    display: flex;
-    flex-direction: column;
-    row-gap: 34px;
-    z-index: 10;
-    width: 100%;
-    height: 100vh;
-    padding-inline: 28px;
-    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  padding-inline: 28px;
+  background-color: #fff;
 }
 
 /* About Style
