@@ -384,7 +384,6 @@ header {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
-  border: none;
 }
 
 .preview-modal-card .close-btn {
@@ -396,7 +395,6 @@ header {
 .close-btn-img-desktop {
   display: none;
 }
-
 
 .preview-mobile-img {
   display: block;
@@ -494,7 +492,6 @@ header {
   height: auto;
   margin-inline-start: 15px;
 }
-
 
 /* About Style
 ------------------------------------ */
@@ -836,9 +833,9 @@ header {
     row-gap: 24px;
   }
 
-    .preview-desc {
-      row-gap: 36px;
-    }
+  .preview-desc {
+    row-gap: 36px;
+  }
 
   .preview-desc-heading {
     margin-inline-end: 311px;
