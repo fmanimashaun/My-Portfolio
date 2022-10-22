@@ -715,7 +715,7 @@ header {
 }
 
 .contact-content-form *:not(input[type="submit"], span, .submit-field).error {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .contact-content-form *:not(input[type="submit"], span, .submit-field).success {
