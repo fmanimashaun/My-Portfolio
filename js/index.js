@@ -139,3 +139,71 @@ cardList.forEach((card, index) => {
 projectCloseBtn.addEventListener('click', () => {
   projectModalCard.classList.toggle('close');
 });
+
+// form validation
+const form = document.querySelector('.contact-content-form');
+const submitBtn = document.querySelector('input[type="submit"]');
+const email = document.querySelector('#email');
+const EMAIL_REQUIRED = 'Please enter your email, form yet to be submitted';
+const EMAIL_INVALID = 'Please enter email in lowercase, form yet to be submitted';
+
+const isRequired = (value) => {
+  if (value === '') {
+    return false;
+  }
+  return true;
+};
+
+const showError = (input, message) => {
+  // add the error class
+  input.classList.remove('success');
+  input.classList.add('error');
+
+  // show the error message
+  const error = submitBtn.parentNode.querySelector('span');
+  error.classList.add('error');
+  error.textContent = message;
+};
+
+const showSuccess = (input) => {
+  // remove the error class
+  input.classList.remove('error');
+  input.classList.add('success');
+
+  // hide the error message
+  const error = submitBtn.parentNode.querySelector('span');
+  error.textContent = '';
+};
+
+const isEmailValid = (email) => {
+  const regExp = /^([a-z0-9_\-.]+)@([a-z0-9_\-.]+)\.([a-z]+)$/;
+  return regExp.test(email);
+};
+
+const checkEmail = () => {
+  let valid = false;
+  const emailAddress = email.value.trim();
+
+  if (!isRequired(emailAddress)) {
+    showError(email, EMAIL_REQUIRED);
+  } else if (!isEmailValid(emailAddress)) {
+    showError(email, EMAIL_INVALID);
+  } else {
+    showSuccess(email);
+    valid = true;
+  }
+  return valid;
+};
+
+form.addEventListener('submit', (event) => {
+  // prevent the form from submitting
+  event.preventDefault();
+
+  // validate fields
+  const isEmailValid = checkEmail();
+
+  // submit to the server if the form is valid
+  if (isEmailValid) {
+    form.submit();
+  }
+});
