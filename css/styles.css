@@ -701,7 +701,7 @@ header {
   margin-block-end: 44px;
 }
 
-.contact-content-form *:not(input[type="submit"]) {
+.contact-content-form *:not(input[type="submit"], span, .name-field, .email-field, .comment-field) {
   display: block;
   width: 100%;
   padding: 15px 16px;
@@ -712,6 +712,27 @@ header {
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
+}
+
+.contact-content-form *:not(input[type="submit"], span, .name-field, .email-field, .comment-field).error {
+    border: 1px solid red;
+}
+
+.contact-content-form *:not(input[type="submit"], span, .name-field, .email-field, .comment-field).success {
+  background: #c5e9da7d;
+}
+
+.email-field,
+.name-field,
+.comment-field {
+  width: 100%;
+}
+
+.email-field span.error,
+.name-field span.error,
+.comment-field span.error {
+  font-size: 12px;
+  color: red;
 }
 
 /* Styling the input field focus-visible */

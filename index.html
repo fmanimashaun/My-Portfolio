@@ -259,10 +259,18 @@
 					<h2 class="contact-content-intro">I'm always interested in hearing about new projects, so if you'd like to
 						chat please get in touch.</h2>
 					<form action="https://formspree.io/f/mzbwvpev" method="POST" class="contact-content-form">
+						<div class="name-field">
 						<input type="text" name="full name" id="full_name" maxlength="30" placeholder="Full name">
-						<input type="email" name="email" id="email" placeholder="Email address" required>
-						<textarea name="message" id="message" maxlength="500" cols="30" rows="4" placeholder="Enter text here"
-							required></textarea>
+						<span></span>
+						</div>
+						<div class="email-field">
+							<input type="email" name="email" id="email" placeholder="Email address">
+							<span></span>
+						</div>
+						<div class="comment-field">
+						<textarea name="message" id="message" maxlength="500" cols="30" rows="4" placeholder="Enter text here"></textarea>
+							<span></span>
+							</div>
 						<input class="contact-content-btn" type="submit" value="Get in touch">
 					</form>
 				</article>

@@ -139,3 +139,137 @@ cardList.forEach((card, index) => {
 projectCloseBtn.addEventListener('click', () => {
   projectModalCard.classList.toggle('close');
 });
+
+// form validation
+const form = document.querySelector('.contact-content-form');
+const email = document.querySelector('#email');
+const fullName = document.querySelector('#full_name');
+const message = document.querySelector('#message');
+const NAME_REQUIRED = 'Full name cannot be blank.';
+const EMAIL_REQUIRED = 'Please enter your email.';
+const EMAIL_INVALID = 'Please enter a correct email address format in lowercase.';
+const MESSAGE_REQUIRED = 'Message cannot be blank.';
+
+const isRequired = (value) => {
+  if (value === '') {
+    return false;
+  }
+  return true;
+};
+
+const showError = (input, message) => {
+  // add the error class
+  input.classList.remove('success');
+  input.classList.add('error');
+
+  // show the error message
+  const error = input.parentNode.querySelector('span');
+  error.classList.add('error');
+  error.textContent = message;
+};
+
+const showSuccess = (input) => {
+  // remove the error class
+  input.classList.remove('error');
+  input.classList.add('success');
+
+  // hide the error message
+  const error = input.parentNode.querySelector('span');
+  error.textContent = '';
+};
+
+const checkFullname = () => {
+  let valid = false;
+
+  const name = fullName.value.trim();
+
+  if (!isRequired(name)) {
+    showError(fullName, NAME_REQUIRED);
+  } else {
+    showSuccess(fullName);
+    valid = true;
+  }
+  return valid;
+};
+
+const checkMessage = () => {
+  let valid = false;
+
+  const messageContent = message.value.trim();
+
+  if (!isRequired(messageContent)) {
+    showError(message, MESSAGE_REQUIRED);
+  } else {
+    showSuccess(message);
+    valid = true;
+  }
+  return valid;
+};
+
+const isEmailValid = (email) => {
+  const regExp = /^([a-z0-9_\-.]+)@([a-z0-9_\-.]+)\.([a-z]+)$/;
+  return regExp.test(email);
+};
+
+const checkEmail = () => {
+  let valid = false;
+  const emailAddress = email.value.trim();
+
+  if (!isRequired(emailAddress)) {
+    showError(email, EMAIL_REQUIRED);
+  } else if (!isEmailValid(emailAddress)) {
+    showError(email, EMAIL_INVALID);
+  } else {
+    showSuccess(email);
+    valid = true;
+  }
+  return valid;
+};
+
+// Create a debounce function
+const debounce = (fn, delay = 500) => {
+  let timeoutId;
+  return (...args) => {
+    // cancel the previous timer
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+    // setup a new timer
+    timeoutId = setTimeout(() => {
+      fn(...args);
+    }, delay);
+  };
+};
+
+//
+form.addEventListener('input', debounce((event) => {
+  switch (event.target.id) {
+    case 'fullName':
+      checkFullname();
+      break;
+    case 'email':
+      checkEmail();
+      break;
+    case 'message':
+      checkMessage();
+      break;
+    default:
+      break;
+  }
+}));
+
+form.addEventListener('submit', (event) => {
+  // prevent the form from submitting
+  event.preventDefault();
+
+  // validate fields
+  const isFullNameValid = checkFullname();
+  const isEmailValid = checkEmail();
+  const isMessageValid = checkMessage();
+
+  const isFormValid = isFullNameValid && isEmailValid && isMessageValid;
+  // submit to the server if the form is valid
+  if (isFormValid) {
+    event.submit();
+  }
+});
