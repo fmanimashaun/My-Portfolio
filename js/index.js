@@ -140,10 +140,12 @@ projectCloseBtn.addEventListener('click', () => {
   projectModalCard.classList.toggle('close');
 });
 
-// form validation
+// Getting form elements
 const form = document.querySelector('.contact-content-form');
 const submitBtn = document.querySelector('input[type="submit"]');
+const fullName = document.querySelector('#full_name');
 const email = document.querySelector('#email');
+const message = document.querySelector('#message');
 const EMAIL_REQUIRED = 'Please enter your email, form yet to be submitted';
 const EMAIL_INVALID = 'Please enter email in lowercase, form yet to be submitted';
 
@@ -206,4 +208,46 @@ form.addEventListener('submit', (event) => {
   if (isEmailValid) {
     form.submit();
   }
+});
+
+// Creating form data object
+
+const formData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+// prefilling the form element
+function prefillForm() {
+  // retrieving stored data
+  const StoreData = localStorage.getItem('contactFormData');
+  const data = JSON.parse(StoreData);
+  fullName.value = data.name;
+  email.value = data.email;
+  message.value = data.message;
+}
+
+// Storing value to local storage
+function populateStorage() {
+  formData.name = fullName.value;
+  formData.email = email.value;
+  formData.message = message.value;
+  localStorage.setItem('contactFormData', JSON.stringify(formData));
+  prefillForm();
+}
+
+// To confirm if the page has been visited previously
+if (!localStorage.getItem('contactFormData')) {
+  populateStorage();
+} else {
+  prefillForm();
+}
+
+// adding event listener to form
+form.addEventListener(('change'), () => {
+  formData.name = fullName.value;
+  formData.email = email.value;
+  formData.message = message.value;
+  populateStorage();
 });
