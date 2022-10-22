@@ -213,17 +213,10 @@ form.addEventListener('submit', (event) => {
 // Creating form data object
 
 const formData = {
-  name: fullName.value,
-  email: email.value,
-  message: message.value,
+  name: '',
+  email: '',
+  message: '',
 };
-
-// To confirm if the page has been visited previously
-if (!localStorage.getItem('email')) {
-  populateStorage();
-} else {
-  prefillForm();
-}
 
 // prefilling the form element
 function prefillForm() {
@@ -237,7 +230,17 @@ function prefillForm() {
 
 // Storing value to local storage
 function populateStorage() {
+  formData.name = fullName.value;
+  formData.email = email.value;
+  formData.message = message.value;
   localStorage.setItem('contactFormData', JSON.stringify(formData));
+  prefillForm();
+}
+
+// To confirm if the page has been visited previously
+if (!localStorage.getItem('contactFormData')) {
+  populateStorage();
+} else {
   prefillForm();
 }
 
