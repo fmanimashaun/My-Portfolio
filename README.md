@@ -15,10 +15,10 @@ The project is focus on create a professional portfolio site to showcase my prof
 - [x] Desktop version
 - [x] Application deploy
 - [x] Evaluate accessibility
-- [ ] Mobile menu
-- [ ] Details modal
-- [ ] Validate contact form
-- [ ] Preserve data in the browser
+- [x] Mobile menu
+- [x] Details modal
+- [x] Validate contact form
+- [x] Preserve data in the browser
 - [ ] Finalising the project page
 
 > [Live Demo Link](https://fmanimashaun.github.io/My-Portfolio/)
