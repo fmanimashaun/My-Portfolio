@@ -457,6 +457,10 @@ header {
 .preview-source-btn,
 .preview-live-btn {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   padding: 12px 16px;
   background-color: #36b37f;
   border-radius: 4px;
@@ -490,7 +494,6 @@ header {
   display: inline-block;
   width: 18px;
   height: auto;
-  margin-inline-start: 15px;
 }
 
 /* About Style
