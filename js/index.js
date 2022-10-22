@@ -144,8 +144,8 @@ projectCloseBtn.addEventListener('click', () => {
 const form = document.querySelector('.contact-content-form');
 const submitBtn = document.querySelector('input[type="submit"]');
 const email = document.querySelector('#email');
-const EMAIL_REQUIRED = 'Please enter your email.';
-const EMAIL_INVALID = 'Please enter a correct email address format in lowercase.';
+const EMAIL_REQUIRED = 'Please enter your email, form yet to be submitted';
+const EMAIL_INVALID = 'Please enter email in lowercase, form yet to be submitted';
 
 const isRequired = (value) => {
   if (value === '') {
